@@ -10,5 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flContent,MovieListFragment())
+            addToBackStack("")
+            commit()
+        }
     }
 }

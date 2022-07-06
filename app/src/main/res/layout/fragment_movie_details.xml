@@ -25,18 +25,19 @@
             android:id="@+id/ivSmallPoster"
             android:layout_width="100dp"
             android:layout_height="160dp"
+
             android:elevation="1dp"
-            android:layout_marginTop="-80dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tvMovieName"
-            app:layout_constraintTop_toBottomOf="@id/ivLargePoster"
+            app:layout_constraintBottom_toBottomOf="@id/ivLargePoster"
             android:src="@color/black"
             />
 
         <ImageView
             android:id="@+id/ivLargePoster"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1.5"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
