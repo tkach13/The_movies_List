@@ -11,7 +11,7 @@ class MovieListFragment : Fragment() {
     private var _binding: LayoutMovieListFragmentBinding? = null
 
     private val binding get() = _binding!!
-    private var moviesAdapter = MoviesAdapter()
+    private val moviesAdapter = MoviesAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
